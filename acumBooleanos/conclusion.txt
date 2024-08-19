@@ -1,0 +1,10 @@
+Regla general para acumulacion booleana
+
+1 - Cuando la hipotesis es: que la propiedad se cumple
+pata todos los elementos, ret comienza valiendo true
+y la acumulacion es con and ( && )
+
+2 - Cuando la hipotesis es: que la propiedad se cumple
+para al menos un elemento, ret comienza valiendo false
+y la acumulacion es con or ( || )
+

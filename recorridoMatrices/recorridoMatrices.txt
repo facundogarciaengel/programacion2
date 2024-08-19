@@ -1,0 +1,49 @@
+Como se crea una matriz en java? 
+Tenemos 2 formas: 
+--------------------------------------------
+int CANT_FILAS = 2;
+int CANT_COLUMNAS = 3;
+int [][] = new int [CANT_FILAS][CANT_COLUMNAS];
+matriz[0][0] = 1;
+matriz[0][1] = 2;
+matriz[0][2] = 3;
+matriz[1][0] = 4;
+matriz[1][1] = 5;
+matriz[1][2] = 6;
+--------------------------------------------
+int [][] matriz2 = {
+    {1,2,3},
+    {4,5,6}
+};
+
+¿Cual te parece mejor?.....
+---------------------------------------------
+Matrices recorridas por fila: 
+
+for(int f=0; f<matriz.length; f++){
+    for(int c=0; c<matriz[0].length; c++){
+        System.out.println(matriz[f][c] + " ")
+    }
+}
+salida: 1 2 3 4 5 6
+Este recorrido nos asegura que visitemos todos los valores de los arrays dentro de la matriz.
+---------------------------------------------
+Recorrer las matrices por columnas: 
+
+for(int c=0; c<matriz[0].length; c++){
+    for(int f=0; f<matriz.length; f++){
+        System.out.println(matriz[f][c] + " ");
+    }
+}
+salida: 1 4 2 5 3 6 
+Este metodo nos hace recorrer cada columna de arriba a abajo y pasa a la siguiente
+------------------------------------------------
+
+Ejercicios: 
+1 - Implementar la funcion boolean algunaFilaPar(int[][] mat) que dada una matriz, devuelve true si 
+la misma tiene al menos una fila con todos sus elementos pares. Si la matriz esta vacia, devuelve
+true. 
+2 - Implementar la funcion boolean algunaColumnaPar(int[][] mat) que dada una matriz, devuelve true
+si la misma tiene al menos una columna con todos sus elementos pares. Si esta vacia devuelve true
+
+// **** cada vez que modifico el codigo java en vscode tengo que volver a compilarlo!! **** // 

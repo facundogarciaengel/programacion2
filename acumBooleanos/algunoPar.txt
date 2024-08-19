@@ -1,0 +1,14 @@
+//Queremos ver si algun numero es par 
+
+//Sin acumuladores
+boolean algunPar(lista)
+    for(i = 0; i<lista.size; i++)
+        if(par(lista[i]))
+            return true
+    return false; 
+
+//Con acumuladores
+boolean algunPar(lista)
+    boolean ret = false; <-- inicia en false 
+    for(i = 0; i<lista.size; i++)
+        ret = ret 

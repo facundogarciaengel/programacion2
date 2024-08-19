@@ -1,0 +1,59 @@
+//Sin utilizar acumuladores
+boolean esPar(lista)
+    for(int i = 0; i<lista.size(); i++)
+        if(!par(lista[i]))
+            return false
+    return true
+
+//Utilizando acumuladores 
+boolean esPar(lista)
+    boolean ret = true
+    for(int i=0; i<lissta.size(); i++)
+        ret = ret && par(lista[i])
+    return ret 
+
+-------------------------------------------------
+// Ahora ademas de ver si es par dejamos la lista 
+//multiplicado por 2
+
+//Sin acumuladores
+boolean esPar(lista)
+    for(i=0; i<lista.size(); i++)
+        if(!(par(lista[i])))
+            return false
+        lista[i] = lista[i]*2
+    return true
+//Esta version no funciona si no llegamos al final
+//de la lista
+
+//2da version
+boolean esPar(lista)
+    for(i = 0 ; i<lista.size(); i++)
+        lista[i] = lista[i] * 2
+    for(i = 0 ; i<lista.size(); i++)
+        if!(par(lista[i]))
+            return false
+    return true
+//Al multiplicar por 2 todos nos quedan pares!!
+
+//3era version 
+
+boolean esPar(lista)
+    copiaLista = lista.clonar()
+    for(i = 0; i<lista.size; i++)
+        lista[i] = lista[i] * 2
+    for(i = 0; i<copiaLista.size; i++)
+        if!(par(copiaLista[i]))
+            return false
+    return true
+//funciona pero parece engorroso 
+
+//4ta version con acumuladores 
+boolean esPar(lista)
+    boolean ret = true <-- empieza en true
+    for(i = 0; i<lista.size; i++)
+        ret = ret && par(lista[i])
+        lista[i] = lista[i] * 2; 
+    return ret;
+
+
