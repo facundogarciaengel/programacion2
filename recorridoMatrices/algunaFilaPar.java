@@ -43,3 +43,6 @@ public static boolean esPar(int n){
         System.out.println(algunaFilaEsPar(mat));
     }
 }
+
+//[][][]  1) f=0, c=0, f=0, c=1, f=0, c=2
+//[][][]  2) f=1, c=0, f=1, c=1, f=1, c=2
